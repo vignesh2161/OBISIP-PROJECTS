@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    
+  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.logo{
+    color: white;
+}
+p{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("nb1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+   font-size: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     position: relative;
+}
+ 
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header{
+margin-top: 20%;
+color: white;
+font-size: 40px;
+}
+.header span{
+    color: rgb(211, 14, 14);
+}
+ button{
+    color: white;
+    background: rgb(211, 14, 14);
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transformation-duration: 0.3s;
+}
+  button:hover, button:focus,  button:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transformation: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* --------- about me ---------*/
+#about{
+    padding: 80px;
+    color: white;
+    
+}
+p{
+    font-weight: 200;
+    line-height: 200%;
+    font-style: calc();
+}
+p b{
+    color: red;
+}
+.container1{
+    background-color: black;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+}
+.sub-title p{
+    line-height: 2%;
+}
+.about-col-2 ul li{
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: -1px;
+    position: relative;
+}
+.about-col-2 ul li a{
+    position: relative;
+     margin-left: -1px;
+     
+}
+/* ---------- skills ------------*/
+#skills{
+   padding: 80px ;
+   margin-top: -10%;
+   color: WHITE;
+}
+.container2{
+    
+    color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-3{
+    flex-basis: 60%;
+}
+.header1{
+    color: white;
+    margin-top: auto;
+    font-size: 60px;
+    font-weight: 600;
+}
+.about-col-4{
+    flex-basis: 35%;
+}
+.about-col-4 img{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px;
+}
+.header ul li{
+    padding: 80px;
+    font-weight: 100;
+}
+
+/*---------- projects -------------*/
+#about{
+    padding: 80px ;
+    color: white;
+}
+.container3{
+    background-color: black;
+    margin-bottom: -5%;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-5{
+    flex-basis: 35%;
+}
+.about-col-5 img{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px;
+}
+.about-col-6{
+    flex-basis: 60%;
+}
+.sub-title2{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+/*------------certifications--------------*/
+.container5{
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: auto;
+}
+.cards{
+    background:rgb(37, 37, 37);
+    flex-basis: 30%;
+    text-align: center;
+    margin: 12px 0px;
+    padding: 25px 0px;
+    border-radius: 4%;
+    
+}
+.cards h3{
+    padding: 7px;
+    color: rgb(207, 235, 229);
+}
+.cards  button a{
+    text-decoration: none;
+    padding: 0px 10px;
+}
+#certifications h1{
+    font-weight:600;
+    text-align: center;
+    padding: 20px 5px 0px;
+    font-size: 55px;
+}
+
+
+
+
+
+
+
+/*------------contact me--------------*/
+.container4{
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5%;
+
+}
+form h1{
+    color: black;
+}
+form{
+    background: white ;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    height: 80%;
+    width: 90%;
+     max-width: 600px;
+
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    background: #f5f5f5;
+
+}
+form button{
+    padding: 15px;
+    background: black  ;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+}
